@@ -1,0 +1,63 @@
+.splash-main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color:#f8faff;
+  
+    .bg-top-right,
+    .bg-bottom-left {
+      position: absolute;
+      z-index: 1;
+    }
+  
+    .bg-top-right {
+      
+      width: 460px;
+    }
+  
+    .bg-bottom-left {
+     
+      width: 600px;
+    }
+  
+    .content-outer {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+  
+      .logo {
+        width: 90px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+  
+      .main-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 15px 25px;
+  
+        .signin-btn,
+        .register-btn {
+          background-color: #2d3748; 
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          border-radius: 5px;
+          font-weight: 600;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #4a5568; 
+          }
+        }
+      }
+    }
+  }
+  
